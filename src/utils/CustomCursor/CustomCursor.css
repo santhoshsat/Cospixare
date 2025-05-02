@@ -1,0 +1,39 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: 
+        transform 0.1s ease-out,
+        width 0.2s ease,
+        height 0.2s ease,
+        background 0.2s ease;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    will-change: transform; /* Optimize for hardware acceleration */
+    contain: layout; /* Improve performance */
+}
+
+.cursor.hover {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.8);
+    mix-blend-mode: normal;
+}
+
+.cursor.click {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+@media (hover: none) {
+    .cursor {
+        display: none;
+    }
+}
