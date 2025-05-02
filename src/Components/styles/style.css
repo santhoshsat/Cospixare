@@ -425,7 +425,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
+    margin-left: 0;
 }
 
 .hero {
@@ -641,6 +641,7 @@ body {
     color: #fff;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin-left: 0;
 }
 .who-we-are {
     display: flex;
@@ -829,6 +830,7 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-left: 0;
 }
 
 .services {
