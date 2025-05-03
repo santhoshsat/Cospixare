@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Contact/Contact.css'
+import './FormSection.css'
 
 const FormSection = () => {
 
@@ -75,6 +75,8 @@ const FormSection = () => {
                         <option value="Mobile App Development">Mobile App Development</option>
                         <option value="Digital Marketing">Digital Marketing</option>
                         <option value="UI/UX Design">UI/UX Design</option>
+                        <option value="Logo Designing">Logo Designing</option>
+                        <option value="Cloud Solution">Cloud Solution</option>
                     </select>
                 </div>
                 
@@ -88,20 +90,20 @@ const FormSection = () => {
                             checked={formData.updates}
                             onChange={(e) => setFormData({ ...formData, updates: e.target.checked })}
                         />
-                        I want to receive updates and offers
+                        <p>I would like to be updated on the latest products, events, and thought leadership.</p>
                     </label>
                     <label className="checkbox-label">
-                        <input 
-                            type="checkbox" 
+                        <input
+                            type="checkbox"
                             name="terms" 
                             className="checkbox-input"
                             checked={formData.terms}
                             onChange={(e) => setFormData({ ...formData, terms: e.target.checked })}
                         />
-                        I agree to the terms and conditions
+                        <p>I have read and accepted the <a href="/termsCondition">Terms & Conditions</a> & <a href="/privacyPolicy">Privacy Policy</a>.</p>
                     </label>
                 </div>
-                <button type="submit" className="form-submit">Submit</button>
+                <button type="submit" className="submit-button">Submit</button>
             </form>
         </>
     )

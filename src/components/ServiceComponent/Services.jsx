@@ -25,7 +25,6 @@ const ServicesPage = () => {
 
   return (
     <main>
-      {/* Hero Section */}
       <section className="herotwo">
         <div className="overlay"></div>
         <div className="hero-contenttwo">
@@ -41,13 +40,12 @@ const ServicesPage = () => {
         <div className="parallax-bg"></div>
       </section>
 
-      {/* Services Section */}
       <section className="servicestwo" id="servicespage">
         <h2 className="section-titletwo">Our Services</h2>
         <div className="service-containertwo">
           {servicesData.map((service, index) => (
             <div 
-              className="service-cardtwo" 
+              className="service-cardtwo"
               key={index}
               data-aos="fade-up"
               data-aos-delay={service.delay}

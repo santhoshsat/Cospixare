@@ -77,27 +77,27 @@ export const valuesData = [
     },
     {
       title: "Growth",
-      image: "/assets/images/growth-about.svg",
+      image: "../assets/images/growth-about.svg",
       description: "We embrace continuous learning, foster innovation, and adapt to emerging technologies to drive sustainable business success and maintain our competitive edge in the ever-evolving digital landscape."
     },
     {
       title: "Responsibility",
-      image: "/assets/images/responsibility-about.svg",
+      image: "../assets/images/responsibility-about.svg",
       description: "We take pride in making thoughtful decisions that prioritize ethics, fairness, and transparency in all our business practices, ensuring we build and maintain long-term trust with our clients, partners, and stakeholders."
     },
     {
       title: "Fulfillment",
-      image: "/assets/images/fulfillment-about.svg",
+      image: "../assets/images/fulfillment-about.svg",
       description: "Passion fuels our work and drives our innovation. We create transformative technology solutions that make a meaningful impact on businesses and communities, while fostering a culture of excellence and continuous improvement in everything we do."
     },
     {
       title: "Fair Play",
-      image: "/assets/images/fair-about.svg",
+      image: "../assets/images/fair-about.svg",
       description: "Honesty and integrity form the bedrock of our business operations. We believe in conducting ourselves with the highest ethical standards, ensuring transparency and fairness in every interaction with our clients, partners, and team members."
     },
     {
       title: "Openness",
-      image: "/assets/images/openness-about.svg",
+      image: "../assets/images/openness-about.svg",
       description: "We champion transparency and open communication as core values, fostering trust and collaboration through honest dialogue and inclusive interactions with our team members, clients, and stakeholders. Our commitment to openness creates an environment where ideas flow freely and innovation thrives."
     }
 ];

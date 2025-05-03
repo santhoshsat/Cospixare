@@ -1,3 +1,5 @@
+/* Career.css */
+/* Career Hero Section Styles */
 #career-hero {
     min-height: 100vh;
     position: relative;
@@ -225,6 +227,12 @@
     letter-spacing: 0.5px;
 }
 
+/* Career Form Section */
+.career-form-section {
+    padding: 70px 0;
+    background: #f4f4f4;
+}
+
 /* Enhanced Animations */
 @keyframes fadeInUp {
     0% {
@@ -313,15 +321,6 @@
     .stat-item:active,
     .career-button:active {
         transform: scale(0.98);
-    }
-}
-
-/* High DPI Screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .career-title,
-    .stat-item .number {
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
     }
 }
 

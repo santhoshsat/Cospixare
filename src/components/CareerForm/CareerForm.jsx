@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './CareerForm.css'
 
 const CareerForm = () => {
 
@@ -98,10 +99,10 @@ const CareerForm = () => {
         <div className="form-group">
           <label htmlFor="name">Full Name:</label>
           <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            autoComplete="name" 
+            type="text"
+            id="name"
+            name="name"
+            autoComplete="name"
             value={formData.name}
             onChange={handleChange}
             required 

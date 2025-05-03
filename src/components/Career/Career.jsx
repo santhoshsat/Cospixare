@@ -10,7 +10,7 @@ const Career = () => {
     <main>
       <section
         id="career-hero"
-        style={{ 
+        style={{
           backgroundImage: "url('../assets/images/careergrowth.svg')", 
           backgroundSize: 'cover', 
           backgroundPosition: 'center' 
