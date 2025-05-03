@@ -2,7 +2,7 @@
 import './App.css'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
 import { CustomCursor, CustomPreLoader } from './utils'
-import { NavBar, Home, About, Contact ,Career} from './components'
+import { NavBar, Home, About, Contact ,Career ,Footer} from './components'
 
 function App() {
 
@@ -17,6 +17,8 @@ function App() {
       <About />
       <Contact />
       <Career />
+      <Footer />
+
     </>
   )
 }
