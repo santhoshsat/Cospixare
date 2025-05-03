@@ -117,3 +117,20 @@ export const technologiesData = [
     { name: "Mongodb", image: "/assets/svg/mongodb.svg" }
 ];
 
+export const contactInfoData = [
+    {
+        title: '📅 Book a Demo',
+        description: 'Schedule a personalized demo to explore our solutions and see how we can help your business thrive.',
+    },
+    {
+        title: '📩 Send Your CV',
+        description: 'Join our team at ',
+        link: '/careers',
+        linkText: 'Careers'
+    },
+    {
+        title: '📧 Reach Us via Email',
+        linkText: 'info@cospixaretechnologies.in',
+        link: 'mailto:info@cospixaretechnologies.in' // Fixed - don't use this.linkText here
+    },
+];
