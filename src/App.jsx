@@ -1,9 +1,7 @@
-import { Routes, Route } from 'react-router-dom'
-
 import './App.css'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
 import { CustomCursor, CustomPreLoader } from './utils'
-import { NavBar, Home, About } from './components'
+import { NavBar, Home, About, Contact } from './components'
 
 function App() {
 
@@ -16,6 +14,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Contact />
     </>
   )
 }
