@@ -1,35 +1,23 @@
 import React from 'react';
 import './Footer.css';
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaXTwitter, FaThreads } from 'react-icons/fa6';
 
 const Footer = () => {
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    console.log("Newsletter form submitted");
-  };
-
   return (
     <footer className="footer">
       <div className="container">
         {/* About Company */}
         <div className="footer-section about">
           <h2>About Company</h2>
-          <p>We deliver innovative, scalable, and reliable technology solutions that drive your business forward.</p>
+          <p>
+            We deliver innovative, scalable, and reliable technology solutions that drive your business forward.
+          </p>
           <div className="social-icons">
-            <a href="https://www.facebook.com/share/1EA9ZFhNFK" aria-label="Facebook">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/cospixare-technologies" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.instagram.com/cospixare_technologies?igsh=MXJqdjUxZmc1MHBlaA==" aria-label="Instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="https://x.com/Cospixare_Tech?t=sFe4y0KUoVhGPxEoxP2RcA&s=09" aria-label="X-Twitter">
-              <i className="fa-brands fa-x-twitter"></i>
-            </a>
-            <a href="https://www.threads.net/@cospixare_technologies" aria-label="Threads">
-              <i className="fa-brands fa-threads"></i>
-            </a>
+            <a href="https://www.facebook.com/share/1EA9ZFhNFK" aria-label="Facebook"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com/company/cospixare-technologies" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.instagram.com/cospixare_technologies?igsh=MXJqdjUxZmc1MHBlaA==" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://x.com/Cospixare_Tech?t=sFe4y0KUoVhGPxEoxP2RcA&s=09" aria-label="X-Twitter"><FaXTwitter /></a>
+            <a href="https://www.threads.net/@cospixare_technologies" aria-label="Threads"><FaThreads /></a>
           </div>
         </div>
 
@@ -49,25 +37,22 @@ const Footer = () => {
           <h2>Newsletter</h2>
           <p>Subscribe to our newsletter to get the latest updates and offers.</p>
           <div className="subscribe-box">
-            <form onSubmit={handleNewsletterSubmit}>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
               <input type="hidden" name="access_key" value="21ef4e09-e220-4a65-915d-cb8ebcb581bb" />
               <input type="hidden" name="redirect" value="https://cospixaretechnologies.in/thank-you.html" />
               <input type="hidden" name="subject" value="New Email submission from Cospixare Technologies" />
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                autoComplete="email"
-                required
-              />
+              <input type="email" name="email" placeholder="Enter your email" autoComplete="email" required />
               <button type="submit" className="cta-button">Subscribe</button>
-            </form>    
+            </form>
           </div>
           <p id="msg"></p>
         </div>
       </div>
 
-      {/* Copyright */}
+      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>© 2025 Cospixare Technologies. All Rights Reserved.</p>
         <ul>
