@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="contact-content">
           <h1 className="contact-title">Let's Connect & Build Something Amazing</h1>
           <p className="contact-description" style={{ color: 'rgb(255, 238, 0)' }}>
-            Whether you have a project in mind or just want to say hello, our team at 
+            Whether you have a project in mind or just want to say hello, our team at<br/>
             <span>Cospixare Technologies</span> is here to help. Let's create the future together.
           </p>
           <a href="#contact-form" className="contact-button">Get in Touch</a>

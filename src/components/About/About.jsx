@@ -83,16 +83,17 @@ const About = () => {
 
         {/* Slideshow Content */}
         <div className="values-slider">
-          <div className={`slide ${activeTab === 0 ? 'active' : ''}`}>
+          <div className="slide active">
             <div className="image-container">
-              <img src={valuesData[0].image} alt={valuesData[0].title} style={{ color: 'black' }} />
+              <img src={valuesData[activeTab].image} alt={valuesData[activeTab].title} />
             </div>
             <div className="text-container">
-              <h2>{valuesData[0].title}</h2>
-              <p>{valuesData[0].description}</p>
+              <h2>{valuesData[activeTab].title}</h2>
+              <p>{valuesData[activeTab].description}</p>
             </div>
           </div>
         </div>
+
 
         {/* Navigation Buttons */}
         <div className="values-navigation">

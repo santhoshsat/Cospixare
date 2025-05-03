@@ -36,37 +36,37 @@ export const servicesData = [
     {
       title: "Digital Marketing & SEO",
       description: "Boost your online presence and drive traffic with our AI-enhanced marketing strategies.",
-      link: "/digital-marketing-service",
+      link: "/service/digitalmarketing_service",
       delay: "0"
     },
     {
       title: "Custom Software Development",
       description: "Develop bespoke software solutions tailored to your business needs.",
-      link: "/software-service",
+      link: "/service/software_service",
       delay: "100"
     },
     {
       title: "Brand Strategy & Identity",
       description: "Build a strong brand identity that resonates with your target audience.",
-      link: "/logo-service",
+      link: "/service/logo_service",
       delay: "200"
     },
     {
       title: "UI/UX Design & Research",
       description: "Design user-centric interfaces that enhance user engagement and satisfaction.",
-      link: "/ux-ui-service",
+      link: "/service/uiux_service",
       delay: "300"
     },
     {
       title: "Web Development",
       description: "Deliver comprehensive web applications with our full-stack expertise.",
-      link: "/web-dev-service",
+      link: "/service/web_service",
       delay: "400"
     },
     {
       title: "Cloud & DevOps",
       description: "Optimize your infrastructure with seamless cloud and DevOps solutions.",
-      link: "/cloud-service",
+      link: "/service/cloud_service",
       delay: "500"
     }
   ];

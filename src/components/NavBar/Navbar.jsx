@@ -78,28 +78,28 @@ const Navbar = () => {
               <div className="mega-menu">
                 <div className="menu-column">
                   <h3>Digital Solutions</h3>
-                  <a href="/digital-marketing-service">
+                  <a href="/service/digitalmarketing_service">
                     <FontAwesomeIcon icon={faBullhorn} /> Digital Marketing & SEO
                   </a>
-                  <a href="/software-service">
+                  <a href="/service/software_service">
                     <FontAwesomeIcon icon={faCode} /> Custom Software Development
                   </a>
                 </div>
                 <div className="menu-column">
                   <h3>Design Services</h3>
-                  <a href="/logo-service">
+                  <a href="/service/logo_service">
                     <FontAwesomeIcon icon={faPaintBrush} /> Logo Design
                   </a>
-                  <a href="/ux-ui-service">
+                  <a href="/service/uiux_service">
                     <FontAwesomeIcon icon={faPencilRuler} /> UX/UI Design
                   </a>
                 </div>
                 <div className="menu-column">
                   <h3>Web Solutions</h3>
-                  <a href="/web-dev-service">
+                  <a href="/service/web_service">
                     <FontAwesomeIcon icon={faGlobe} /> Website Development
                   </a>
-                  <a href="/cloud-service">
+                  <a href="/service/cloud_service">
                     <FontAwesomeIcon icon={faHandshake} /> Cloud Solutions
                   </a>
                 </div>
