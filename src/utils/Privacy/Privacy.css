@@ -1,0 +1,223 @@
+/* Privacy Hero Section */
+#privacy-hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('../assets/images/privacy-image.jpg') no-repeat center center/cover;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Privacy Content */
+.privacy-content {
+    position: relative;
+    z-index: 2;
+    max-width: 60%;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.privacy-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    opacity: 0;
+    animation: fadeUp 1s forwards 0.5s;
+}
+
+.privacy-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeUp 1s forwards 0.8s;
+}
+
+.privacy-description span {
+    font-weight: bold;
+    color: #C1ACFF;
+}
+
+/* Privacy Button */
+.privacy-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border: none;
+    background: linear-gradient(45deg, #C1ACFF, #EFFCFF);
+    color: #28347A;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.privacy-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .privacy-title {
+        font-size: 2.5rem;
+    }
+
+    .privacy-description {
+        font-size: 1.1rem;
+    }
+
+    .privacy-button {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
+    .privacy-content {
+        max-width: 90%;
+    }
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Privacy Policy Section */
+#privacy-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 5%;
+    text-align: center;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+/* Privacy Container */
+.privacy-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Title & Subtitle */
+.privacy-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #28347A;
+}
+
+.privacy-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Privacy List */
+.privacy-list {
+    text-align: left;
+}
+
+/* Privacy Item */
+.privacy-item {
+    margin-bottom: 20px;
+}
+
+.privacy-header {
+    width: 100%;
+    background: #28347A;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.privacy-header i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Privacy Content */
+.privacy-content {
+    background: #EFFCFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    margin-top: 10px;
+}
+
+.privacy-content p {
+    margin: 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+.privacy-content ul {
+    padding-left: 20px;
+}
+
+.privacy-content li {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-title {
+        font-size: 2rem;
+    }
+
+    .privacy-subtitle {
+        font-size: 1rem;
+    }
+
+    .privacy-header {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .privacy-container {
+        padding: 30px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.privacy-item {
+    animation: slideDown 0.5s ease-in-out;
+}

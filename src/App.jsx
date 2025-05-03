@@ -1,20 +1,34 @@
 import './App.css'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import { CustomCursor, CustomPreLoader } from './utils'
-import { NavBar, Home, About, Contact } from './components'
+import { CustomCursor, CustomPreLoader, Privacy, Terms, ThankYou } from './utils'
+import { NavBar, Home, About, Contact, 
+  Career, Service,  Footer, DigitalMarketing,
+  Cloud, Logo, Uiux, Software, Web
+} from './components'
 
 function App() {
 
   return (
     <>
-      <h1>CosPixare Technology</h1>
       <CustomPreLoader />
       <CustomCursor />
       <GoogleAnalytics />
       <NavBar />
-      <Home />
+      <Cloud />
+      <Logo />
+      <Uiux />
+      <Software />
+      <Web />
+      {/* <DigitalMarketing /> */}
+      {/* <Home />
       <About />
       <Contact />
+      <Career />
+      <Footer />
+      <Privacy />
+      <Terms />
+      <Service />
+      <ThankYou /> */}
     </>
   )
 }

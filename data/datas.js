@@ -134,3 +134,66 @@ export const contactInfoData = [
         link: 'mailto:info@cospixaretechnologies.in' // Fixed - don't use this.linkText here
     },
 ];
+
+export const privacyItems = [
+    {
+      title: "🔒 Information We Collect",
+      des1: 'We collect the following types of information:',
+      list: [
+        'Personal details such as name, email, and phone number.',
+        'Business information provided during inquiries or project discussions.',
+        'Analytics data to improve our website experience.'
+      ]
+    },
+    {
+      title: "📌 How We Use Your Data",
+      des1: 'We use your data for the following purposes:',
+      list: [
+        'To respond to inquiries and provide services.',
+        'To improve our website and services.',
+        'To comply with legal obligations and prevent fraud.'
+      ]
+    },
+    {
+      title: "🔐 Data Security & Protection",
+      des1: 'We implement various security measures to protect your data, including:',
+      list: [
+        'Encryption and secure data storage.',
+        'Restricted access to personal information.',
+        'Regular security audits and updates.'
+      ]
+    }
+]
+
+export const termsItems = [
+  {
+    title: "📌 Terms for Clients",
+    des1: 'As a client of Cospixare Technologies, you agree to:',
+    list: [
+      'Make payments as per the agreed schedule.',
+      'Provide necessary project details and cooperation.',
+      'Respect intellectual property rights and privacy.',
+      'Not misuse or reverse-engineer our software.'
+    ]
+  },
+  {
+    title: "📌 Terms for Employees",
+    des1: 'As an employee of Cospixare Technologies, you agree to:',
+    list: [
+      'Maintain confidentiality of company data.',
+      'Follow workplace ethics and company policies.',
+      'Not engage in any conflict of interest activities.',
+      'Adhere to professional conduct and teamwork.'
+    ]
+  },
+  {
+    title: "📌 Terms for Job Applicants",
+    des1: 'If you are applying for a job, you agree to:',
+    list: [
+      'Provide accurate and honest information.',
+      'Undergo necessary background verification.',
+      'Not share confidential recruitment details.',
+      'Follow company policies if hired.'
+    ],
+  }
+];
