@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router'
 import './App.css'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import { CustomCursor, CustomPreLoader } from './utils'
+import { CustomCursor, CustomPreLoader, Terms, ThankYou, Privacy } from './utils'
 import { NavBar, Home, About, Contact, 
   Career, Service,  Footer, DigitalMarketing,
   Cloud, Logo, Uiux, Software, Web
@@ -28,6 +28,9 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/career' element={<Career />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/terms' element={<Terms />} />
+        <Route path='/policy' element={<Privacy />} />
+        <Route path='/tankyou' element={<ThankYou />} />
       </Routes>
       <Footer />
     </>

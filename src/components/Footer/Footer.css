@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     position: relative;
     overflow: hidden;
+    text-align: left;
 }
 
 .footer::before {
@@ -22,9 +23,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
-    max-width: 1300px;
+    max-width: 1500px;
+    height: fit-content;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 
 .footer-section {
@@ -61,7 +63,7 @@
 /* Social Icons */
 .social-icons {
     display: flex;
-    gap: 25px;
+    gap: 0.3rem;
     justify-content: flex-start;
     margin-top: 25px;
     perspective: 1000px;
@@ -72,7 +74,9 @@
     color: #ffffff;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    padding: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
@@ -160,6 +164,7 @@
     border-radius: 12px;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 1.3rem;
 }
 
 .subscribe-box form {
@@ -196,6 +201,8 @@
     letter-spacing: 1.5px;
     position: relative;
     overflow: hidden;
+    color: black;
+    font-size: 12px;
 }
 
 .subscribe-box button::before {

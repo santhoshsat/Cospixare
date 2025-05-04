@@ -1,38 +1,50 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaXTwitter, FaThreads } from 'react-icons/fa6';
 
+import { SocialLinkData, QuickLinksData } from '../../../data/FooterData';
+
+const socialIcons = [
+  <FaFacebookF />,
+  <FaLinkedinIn />,
+  <FaInstagram />,
+  <FaXTwitter />,
+  <FaThreads />,
+]
+
 const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="container">
-        {/* About Company */}
         <div className="footer-section about">
           <h2>About Company</h2>
           <p>
             We deliver innovative, scalable, and reliable technology solutions that drive your business forward.
           </p>
           <div className="social-icons">
-            <a href="https://www.facebook.com/share/1EA9ZFhNFK" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://www.linkedin.com/company/cospixare-technologies" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="https://www.instagram.com/cospixare_technologies?igsh=MXJqdjUxZmc1MHBlaA==" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://x.com/Cospixare_Tech?t=sFe4y0KUoVhGPxEoxP2RcA&s=09" aria-label="X-Twitter"><FaXTwitter /></a>
-            <a href="https://www.threads.net/@cospixare_technologies" aria-label="Threads"><FaThreads /></a>
+            {
+              SocialLinkData.map((item, index) => (
+                <a href={item.destination} aria-label={item.label} key={index}>{socialIcons[index]}</a>
+              ))
+            }
           </div>
         </div>
 
-        {/* Quick Links */}
         <div className="footer-section quick-links">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="../about.html">About Us</a></li>
-            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
-            <li><a href="../contact.html">Contact Us</a></li>
+            {
+              QuickLinksData.map((item, index) => (
+                <li key={index}>
+                  <Link to={item.destination}>{item.title}</Link>
+                </li>
+              ))
+            }
           </ul>
         </div>
 
-        {/* Newsletter */}
         <div className="footer-section newsletter">
           <h2>Newsletter</h2>
           <p>Subscribe to our newsletter to get the latest updates and offers.</p>
@@ -52,13 +64,18 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="footer-bottom">
         <p>© 2025 Cospixare Technologies. All Rights Reserved.</p>
         <ul>
-          <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
-          <li><a href="../careers.html">Careers</a></li>
-          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li>
+            <Link to={'/terms'}>Terms & Conditions</Link>
+          </li>
+          <li>
+            <Link to={'/career'}>Careers</Link>
+          </li>
+          <li>
+            <Link to={'/policy'}>Privacy Policy</Link>
+          </li>
         </ul>
       </div>
     </footer>

@@ -37,7 +37,10 @@
 }
 
 /* Form Elements */
-.form-group {
+.form-groups {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
   margin-bottom: 25px;
   position: relative;
   overflow: hidden;
@@ -106,6 +109,10 @@ button {
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 button::before {

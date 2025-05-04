@@ -96,7 +96,7 @@ const CareerForm = () => {
         <input type="hidden" name="redirect" value="https://cospixaretechnologies.in/thank-you.html" />
         <input type="hidden" name="subject" value="New Candidate Profile From Cospixare Technologies" />
         
-        <div className="form-group">
+        <div className="form-groups">
           <label htmlFor="name">Full Name:</label>
           <input 
             type="text"
@@ -109,23 +109,23 @@ const CareerForm = () => {
           />
           <div className="error" id="nameError">{errors.name}</div>
         </div>
-        <div className="form-group">
+        <div className="form-groups">
           <label htmlFor="email">Email Address:</label>
           <input 
             type="email" 
-            id="email" 
-            name="email" 
-            autoComplete="email" 
+            id="email"
+            name="email"
+            autoComplete="email"
             value={formData.email}
             onChange={handleChange}
-            required 
+            required
           />
           <div className="error" id="emailError">{errors.email}</div>
         </div>
-        <div className="form-group">
+        <div className="form-groups">
           <label htmlFor="phone">Phone Number:</label>
           <input 
-            type="tel" 
+            type="tel"
             id="phone" 
             name="phone" 
             autoComplete="tel" 
@@ -135,25 +135,25 @@ const CareerForm = () => {
           />
           <div className="error" id="phoneError">{errors.phone}</div>
         </div>
-        <div className="form-group">
+        <div className="form-groups">
             <label htmlFor="resume">Upload Resume (PDF/DOC):</label>
             <input 
               type="file" 
-              id="resume" 
-              name="resume" 
-              className="file-upload" 
-              accept=".pdf, .doc, .docx" 
+              id="resume"
+              name="resume"
+              className="file-upload"
+              accept=".pdf, .doc, .docx"
               onChange={handleChange}
-              required 
+              required
             />
             <div className="error" id="resumeError">{errors.resume}</div>
         </div>
-            <div className="form-group">
+            <div className="form-groups">
             <label htmlFor="coverLetter">Cover Letter:</label>
             <textarea 
                 id="coverLetter" 
-                name="coverLetter" 
-                rows="4" 
+                name="coverLetter"
+                rows="4"
                 value={formData.coverLetter}
                 onChange={handleChange}
                 required

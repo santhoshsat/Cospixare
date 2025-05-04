@@ -34,7 +34,7 @@ const FormSection = () => {
                         placeholder='Enter your name'
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
-                    <input 
+                    <input
                         type="tel"
                         name="phone"
                         className="form-input"
@@ -82,21 +82,21 @@ const FormSection = () => {
                 
                 <textarea name="message" className="form-textarea" placeholder="Let us know what you need" required></textarea>
                 <div className="checkbox-group">
-                    <label className="checkbox-label">
+                    <label className="box-labelnew">
                         <input 
-                            type="checkbox" 
+                            type="checkbox"
                             name="updates" 
-                            className="checkbox-input"
+                            className="box"
                             checked={formData.updates}
                             onChange={(e) => setFormData({ ...formData, updates: e.target.checked })}
                         />
-                        <p>I would like to be updated on the latest products, events, and thought leadership.</p>
+                        <p>I would like to be updated on the latest products, events & leadership.</p>
                     </label>
-                    <label className="checkbox-label">
+                    <label className="box-labelnew">
                         <input
                             type="checkbox"
-                            name="terms" 
-                            className="checkbox-input"
+                            name="terms"
+                            className="box"
                             checked={formData.terms}
                             onChange={(e) => setFormData({ ...formData, terms: e.target.checked })}
                         />
