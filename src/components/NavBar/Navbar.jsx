@@ -108,7 +108,7 @@ const Navbar = () => {
           </li>
 
           <li style={{ '--i': 2 }}>
-            <a href="/careers" className="nav-item">
+            <a href="/career" className="nav-item">
               <FontAwesomeIcon icon={faBriefcase} /> Careers
             </a>
           </li>

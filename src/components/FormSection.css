@@ -1,5 +1,3 @@
-/* FormSection.css */
-/* Form Styles */
 .contact-form {
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;
@@ -26,6 +24,7 @@
     font-size: 1rem;
     transition: all 0.3s ease;
     background: #fff;
+    color: black;
 }
 
 .form-input:focus, .form-select:focus, .form-textarea:focus {
@@ -64,16 +63,19 @@
 .checkbox-group {
     margin: 20px 0;
     display: flex;
-    flex-direction: column; /* Ensure items stack vertically */
-    gap: 15px; /* Adjust spacing between checkbox labels */
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkbox-group p {
+    color: #566972;
+    font-size: 12px;
 }
 
 .checkbox-label {
     display: flex;
-    align-items: center; /* Align checkbox and text vertically */
-    flex-direction: row; /* Keep checkbox and text in a row */
-    font-size: 0.9rem;
-    color: #455a64;
+    align-items: center;
+    flex-direction: row;
 }
 
 .checkbox-input {
@@ -183,4 +185,17 @@
     .contact-form {
         padding: 20px;
     }
+}
+
+.box-labelnew {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.3rem;
+    color: #566972;
+}
+
+.box {
+    width: fit-content;
+    height: fit-content;
 }

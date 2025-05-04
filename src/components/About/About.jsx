@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
+import AboutProfileImage from '../../../assets/images/about-cospixare.png'
 
 import { valuesData, technologiesData } from '../../../data/datas';
 
@@ -31,7 +32,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
       <section id="about-cospixare">
         <div className="text-container-cospixare">
           <h3 className="small-heading-cospixare">We're Cospixare Technologies</h3>
@@ -48,11 +48,10 @@ const About = () => {
         </div>
         
         <div className="image-container-cospixare">
-          <img src="../../../assets/images/about-cospixare.png" alt="Team Collaboration" />
+          <img src={AboutProfileImage} alt="Team Collaboration" />
         </div>
       </section>
 
-      {/* Values Section */}
       <section id="values-section">
         <div className="values-header">
           <h3 className="values-subtitle">The Values We Share</h3>
@@ -60,7 +59,6 @@ const About = () => {
           <p className="values-description">We believe in strong ethical values that build trust and innovation.</p>
         </div>
 
-        {/* Navigation Tabs */}
         <div className="values-tabs">
           {valuesData.map((value, index) => (
             <div
@@ -73,7 +71,6 @@ const About = () => {
           ))}
         </div>
 
-        {/* Progress Bar */}
         <div className="progress-bar">
           <div 
             className="progress" 
@@ -81,7 +78,6 @@ const About = () => {
           ></div>
         </div>
 
-        {/* Slideshow Content */}
         <div className="values-slider">
           <div className="slide active">
             <div className="image-container">
@@ -94,8 +90,6 @@ const About = () => {
           </div>
         </div>
 
-
-        {/* Navigation Buttons */}
         <div className="values-navigation">
           <button id="prev" onClick={handlePrev}>←</button>
           <span id="slide-number">{activeTab + 1} / {valuesData.length}</span>
@@ -103,7 +97,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Technologies Section */}
       <section id="tech-section">
         <h2 className="tech-title">Technologies We Use</h2>
         <div className="tech-grid">

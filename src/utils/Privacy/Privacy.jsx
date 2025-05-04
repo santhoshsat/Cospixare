@@ -13,7 +13,6 @@ const Privacy = () => {
 
   return (
     <main>
-      {/* Privacy Policy Hero Section */}
       <section id="privacy-hero">
         <div className="overlay"></div>
         <div className="privacy-content">
@@ -26,7 +25,6 @@ const Privacy = () => {
         </div>
       </section>
 
-      {/* Privacy Policy Section */}
       <section id="privacy-section">
         <div className="privacy-container">
           <h1 className="privacy-title">Privacy Policy</h1>
@@ -35,7 +33,6 @@ const Privacy = () => {
             and protect your personal information at <span>Cospixare Technologies</span>.
           </p>
 
-          {/* Privacy Policy Accordion */}
           <div className="privacy-list">
             {privacyItems.map((item, index) => (
               <div className="privacy-item" key={index}>
@@ -46,7 +43,7 @@ const Privacy = () => {
                   {item.title} <FaChevronDown className={`icon ${activeIndex === index ? 'rotate' : ''}`} />
                 </button>
                 <div 
-                  className="privacy-content"
+                  className="privacy-body"
                   style={{
                     maxHeight: activeIndex === index ? '500px' : '0',
                     opacity: activeIndex === index ? '1' : '0',
