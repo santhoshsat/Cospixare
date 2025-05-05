@@ -3,6 +3,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter, FaThreads } from 'react-icons/fa6';
 
 import './Thankyou.css';
+import ThankYouImage from '../../../assets/images/thank-you.png'
 import { socialIcons } from '../../../data/careerData'
 
 const ThankYouIcons = [
@@ -19,8 +20,8 @@ const ThankYou = () => {
       <section id="thank-you-section">
         <div className="thank-you-card">
           <img 
-            src={'../../../assets/images/thank-you.png'}
-            alt="Thank You" 
+            src={ThankYouImage}
+            alt="Thank You"
             className="thank-you-image"
           />
           

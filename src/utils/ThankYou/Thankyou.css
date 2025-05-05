@@ -12,6 +12,12 @@
     overflow: hidden;
 }
 
+#thank-you-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
 .thank-you-card::before {
     content: '';
     position: absolute;
@@ -65,6 +71,10 @@
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 25px;
+}
+
+.message-box ul{
+    list-style-type: none;
 }
 
 .action-buttons {
