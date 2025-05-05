@@ -13,7 +13,11 @@ import {
   faPaintBrush,
   faPencilRuler,
   faGlobe,
-  faHandshake
+  faHandshake,
+  faMobileAlt,
+  faRobot,
+  faBrain,
+  faBookOpen
 } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
 
@@ -68,7 +72,7 @@ const Navbar = () => {
             onMouseEnter={() => setActiveDropdown('services')}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button 
+            <button
               className="drop-btn"
               onClick={() => toggleDropdown('services')}
             >
@@ -101,6 +105,41 @@ const Navbar = () => {
                   </a>
                   <a href="/service/cloud_service">
                     <FontAwesomeIcon icon={faHandshake} /> Cloud Solutions
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li 
+            className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
+            style={{ '--i': 1 }}
+            onMouseEnter={() => setActiveDropdown('services')}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <button
+              className="drop-btn"
+              onClick={() => toggleDropdown('services')}
+            >
+              <FontAwesomeIcon icon={faBookOpen} /> Courses <FontAwesomeIcon icon={faChevronDown} />
+            </button>
+            <div className="dropdown-content">
+              <div className="mega-menu2">
+                <div className="menu-column">
+                  <h3>Full Stack Development</h3>
+                  <a href="/service/digitalmarketing_service">
+                    <FontAwesomeIcon icon={faCode} /> Web Development
+                  </a>
+                  <a href="/service/software_service">
+                    <FontAwesomeIcon icon={faMobileAlt} /> App Development
+                  </a>
+                </div>
+                <div className="menu-column">
+                  <h3>AI & Data Science Programs</h3>
+                  <a href="/service/logo_service">
+                    <FontAwesomeIcon icon={faRobot} /> Artifical Intelligence
+                  </a>
+                  <a href="/service/uiux_service">
+                    <FontAwesomeIcon icon={faBrain} /> Machine Learning
                   </a>
                 </div>
               </div>

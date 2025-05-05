@@ -142,6 +142,12 @@
     gap: 30px;
 }
 
+.mega-menu2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .menu-column {
     padding: 15px;
 }
@@ -181,6 +187,7 @@
     background: rgba(52, 152, 219, 0.1) !important;
     padding-left: 10px !important;
 }
+
 
 /* Search Box */
 .search-box {

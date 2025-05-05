@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
+import { redirect, useNavigate } from 'react-router'
+import axios from 'axios'
+
 import './FormSection.css'
 
 const FormSection = () => {
+
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         name: '',
@@ -11,20 +16,32 @@ const FormSection = () => {
         service: '',
         message: '',
         updates: false,
-        terms: false
     })
+
+    const HandleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            // clear the form after submiting
+            setFormData({
+                name: '',
+                phone: '',
+                email: '',
+                company: '',
+                service: '',
+                message: '',
+                updates: false,
+            })
+            // redirect
+            navigate('/thankyou')
+        } catch (error) {
+            console.log(`Error: ${error.message}`)
+        }
+    }
+
 
     return (
         <>
-            <form 
-                action="https://api.web3forms.com/submit" 
-                method="post" 
-                id="contact-form"
-            >
-                <input type="hidden" name="access_key" value="b4be0a98-09bf-444a-8f5a-1f25ef9d13d2" />
-                <input type="hidden" name="redirect" value="https://cospixaretechnologies.in/thank-you.html" />
-                <input type="hidden" name="subject" value="New Service Request from Cospixare Technologies" />
-
+            <form onSubmit={HandleSubmit}>
                 <div className="form-group">
                     <input
                         type="text" 
@@ -85,7 +102,7 @@ const FormSection = () => {
                     <label className="box-labelnew">
                         <input 
                             type="checkbox"
-                            name="updates" 
+                            name="updates"
                             className="box"
                             checked={formData.updates}
                             onChange={(e) => setFormData({ ...formData, updates: e.target.checked })}
