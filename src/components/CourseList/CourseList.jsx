@@ -29,7 +29,7 @@ const CourseList = () => {
                                     </div>
                                     <h3>{data.title}</h3>
                                     <p style={{ textAlign: 'left' }}>{data.description}</p>
-                                    <a className="btn">Read more →</a>
+                                    <a className="btn" href={data.destination}>Read more →</a>
                                 </div>
                             ))
                         }
