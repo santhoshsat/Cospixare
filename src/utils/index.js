@@ -1,0 +1,5 @@
+export { default as CustomPreLoader } from './CustomPreLoader/CustomPreLoader.jsx'
+export { default as CustomCursor } from './CustomCursor/CustomCursor.jsx'
+export { default as Privacy } from './Privacy/Privacy.jsx'
+export { default as Terms } from './Terms/terms.jsx'
+export { default as ThankYou } from './ThankYou/Thankyou.jsx'

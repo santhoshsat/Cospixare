@@ -1,0 +1,251 @@
+/* Base Styles (unchanged from your original setup) */
+.sectionj {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #180761;
+    color: wheat;
+    text-align: left;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin-top: 6rem;
+  }
+  
+  .text-elementj {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+  }
+  
+  .containerj {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .containerj p {
+    display: flex;
+    border: 1px solid palevioletred;
+    padding: 5px 10px;
+    border-radius: 100px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  
+  .image-elementj {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .buttonsj {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .buttonsj div {
+    border: 1px solid purple;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .btn1j {
+    background-color: white;
+    color: blue;
+  }
+  
+  .w-containerj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    border: 2px solid black;
+    gap: 2rem;
+    background-color: #FCFBFC;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+  }
+  
+  .whats-includej {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  /* Course Section */
+  .course-sectionj {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section-headingj {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .includes-gridj {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .include-cardj {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .include-cardj:hover {
+    transform: translateY(-4px);
+  }
+  
+  .include-cardj .iconj {
+    font-size: 2.2rem;
+    color: #3a86ff;
+    margin-bottom: 0.8rem;
+  }
+  
+  .include-cardj p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  /* Course Description */
+  .course-descriptionj h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .course-descriptionj p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+  }
+  
+  .read-morej {
+    color: #3a86ff;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* What You Will Learn Section */
+  .learn-sectionj {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f7ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .learn-sectionj h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .learn-listj {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .learn-itemj {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #6c63ff;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  
+  /* 🌐 Media Queries for Responsiveness */
+  @media (max-width: 992px) {
+    .sectionj {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+  
+    .text-elementj,
+    .containerj {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .buttonsj {
+      justify-content: center;
+    }
+
+    .image-elementj {
+        display: none;
+    }
+  
+    .w-containerj {
+      width: 45%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .section-headingj {
+      font-size: 1.5rem;
+    }
+  
+    .include-cardj {
+      padding: 1rem;
+    }
+  
+    .learn-itemj {
+      font-size: 0.95rem;
+    }
+  
+    .buttonsj {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    .w-containerj {
+      width: 100%;
+      height: auto;
+    }
+  
+    .learn-sectionj {
+      padding: 1rem;
+    }
+  }
+  
