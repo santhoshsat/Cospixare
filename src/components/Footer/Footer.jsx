@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaXTwitter, FaThreads } from 'react-icons/fa6';
 
 import { SocialLinkData, QuickLinksData } from '../../../data/FooterData';
@@ -68,13 +68,13 @@ const Footer = () => {
         <p>© 2025 Cospixare Technologies. All Rights Reserved.</p>
         <ul>
           <li>
-            <Link to={'/terms'}>Terms & Conditions</Link>
+            <Link to={'/terms'} style={{ textDecoration: 'none' }}>Terms & Conditions</Link>
           </li>
           <li>
-            <Link to={'/career'}>Careers</Link>
+            <Link to={'/career'} style={{ textDecoration: 'none' }}>Careers</Link>
           </li>
           <li>
-            <Link to={'/policy'}>Privacy Policy</Link>
+            <Link to={'/policy'} style={{ textDecoration: 'none' }}>Privacy Policy</Link>
           </li>
         </ul>
       </div>

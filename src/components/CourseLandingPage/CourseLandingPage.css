@@ -1,251 +1,449 @@
 /* Base Styles (unchanged from your original setup) */
 .sectionj {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #180761;
-    color: wheat;
-    text-align: left;
-    flex-wrap: wrap;
-    padding: 2rem;
-    margin-top: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #180761;
+  color: wheat;
+  text-align: left;
+  flex-wrap: wrap;
+  padding: 2rem;
+  margin-top: 6rem;
+}
+
+.text-elementj {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.containerj {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.containerj p {
+  display: flex;
+  border: 1px solid palevioletred;
+  padding: 5px 10px;
+  border-radius: 100px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.containerj p:hover {
+  background-color: palevioletred;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-elementj {
+  height: auto;
+  max-width: 100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0px);
   }
-  
-  .text-elementj {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 1.3rem;
-    width: 100%;
-    max-width: 700px;
-    padding: 20px;
+  50% {
+      transform: translateY(-15px);
   }
-  
-  .containerj {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-    gap: 10px;
+  100% {
+      transform: translateY(0px);
   }
-  
-  .containerj p {
-    display: flex;
-    border: 1px solid palevioletred;
-    padding: 5px 10px;
-    border-radius: 100px;
-    flex-wrap: wrap;
-    font-size: 0.9rem;
-  }
-  
-  .image-elementj {
-    height: auto;
-    max-width: 100%;
-  }
-  
-  .buttonsj {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .buttonsj div {
-    border: 1px solid purple;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-  
-  .btn1j {
-    background-color: white;
-    color: blue;
-  }
-  
-  .w-containerj {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    max-width: 200px;
-    height: 180px;
-    border: 2px solid black;
-    gap: 2rem;
-    background-color: #FCFBFC;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 20px;
-  }
-  
-  .whats-includej {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-  
-  /* Course Section */
-  .course-sectionj {
-    padding: 2rem;
-    font-family: 'Arial', sans-serif;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .section-headingj {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-  
-  .includes-gridj {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .include-cardj {
-    background-color: #fff;
-    border-radius: 12px;
-    padding: 1.2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .include-cardj:hover {
-    transform: translateY(-4px);
-  }
-  
-  .include-cardj .iconj {
-    font-size: 2.2rem;
-    color: #3a86ff;
-    margin-bottom: 0.8rem;
-  }
-  
-  .include-cardj p {
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
-  }
-  
-  /* Course Description */
-  .course-descriptionj h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-  }
-  
-  .course-descriptionj p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-    text-align: justify;
-  }
-  
-  .read-morej {
-    color: #3a86ff;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  /* What You Will Learn Section */
-  .learn-sectionj {
-    width: 100%;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: #f9f7ff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .learn-sectionj h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .learn-listj {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .learn-itemj {
-    padding: 0.75rem 1rem;
-    margin-bottom: 0.5rem;
-    border-left: 4px solid #6c63ff;
-    background-color: #fff;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  
-  /* 🌐 Media Queries for Responsiveness */
-  @media (max-width: 992px) {
-    .sectionj {
+}
+
+.buttonsj {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.buttonsj div {
+  border: 1px solid purple;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.buttonsj div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn1j {
+  background-color: white;
+  color: blue;
+  transition: all 0.3s ease;
+}
+
+.btn1j:hover {
+  background-color: #f0f0f0;
+}
+
+.btn2j, .btn2j a {
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.btn2j:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.w-containerj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 200px;
+  height: 180px;
+  border: 2px solid black;
+  gap: 2rem;
+  background-color: #FCFBFC;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.w-containerj:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.whats-includej {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Course Section */
+.course-sectionj {
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-headingj {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.section-headingj:hover {
+  color: #3a86ff;
+  transform: translateX(5px);
+}
+
+.includes-gridj {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.include-cardj {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.include-cardj:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+  background-color: #f8f9fa;
+}
+
+.include-cardj .iconj {
+  font-size: 2.2rem;
+  color: #3a86ff;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.include-cardj:hover .iconj {
+  transform: scale(1.1);
+  color: #2667cc;
+}
+
+.include-cardj p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.include-cardj:hover p {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Course Description */
+.course-descriptionj h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.course-descriptionj h2:hover {
+  color: #3a86ff;
+}
+
+.course-descriptionj p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
+  transition: all 0.3s ease;
+}
+
+.course-descriptionj:hover p {
+  color: #555;
+}
+
+.read-morej {
+  color: #3a86ff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.read-morej:hover {
+  color: #2667cc;
+  text-decoration: underline;
+}
+
+/* What You Will Learn Section */
+.learn-sectionj {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f7ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.learn-sectionj:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.learn-sectionj h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.learn-sectionj:hover h2 {
+  color: #6c63ff;
+}
+
+.learn-listj {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learn-itemj {
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #6c63ff;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.learn-itemj:hover {
+  transform: translateX(10px);
+  background-color: #f0edff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* 🌐 Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .sectionj {
       flex-direction: column;
       height: auto;
       padding: 2rem 1rem;
       width: 100%;
-    }
-  
-    .text-elementj,
-    .containerj {
+  }
+
+  .text-elementj,
+  .containerj {
       width: 100%;
       padding: 1rem;
-    }
-  
-    .buttonsj {
-      justify-content: center;
-    }
+  }
 
-    .image-elementj {
-        display: none;
-    }
-  
-    .w-containerj {
+  .buttonsj {
+      justify-content: center;
+  }
+
+  .image-elementj {
+      display: none;
+  }
+
+  .w-containerj {
       width: 45%;
       margin-bottom: 1rem;
-    }
   }
-  
-  @media (max-width: 600px) {
-    .section-headingj {
+}
+
+@media (max-width: 600px) {
+  .section-headingj {
       font-size: 1.5rem;
-    }
-  
-    .include-cardj {
+  }
+
+  .include-cardj {
       padding: 1rem;
-    }
-  
-    .learn-itemj {
+  }
+
+  .learn-itemj {
       font-size: 0.95rem;
-    }
-  
-    .buttonsj {
+  }
+
+  .buttonsj {
       flex-direction: column;
       align-items: start;
-    }
-  
-    .w-containerj {
+  }
+
+  .w-containerj {
       width: 100%;
       height: auto;
-    }
-  
-    .learn-sectionj {
-      padding: 1rem;
-    }
   }
-  
+
+  .learn-sectionj {
+      padding: 1rem;
+  }
+}
+
+.text-elementj h1 {
+  position: relative;
+  padding-bottom: 8px;
+  transition: all 0.4s ease;
+}
+
+.text-elementj h1:hover {
+  transform: translateX(5px);
+}
+
+.text-elementj h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3a86ff, #6c63ff, #ff6b6b);
+  transition: width 0.4s ease;
+}
+
+.text-elementj h1:hover::after {
+  width: 100%;
+}
+
+/* For section headings in course content */
+.section-headingj {
+  position: relative;
+  padding-bottom: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.section-headingj::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3a86ff, #6c63ff, #ff6b6b);
+  transition: width 0.4s ease;
+}
+
+.section-headingj:hover {
+  color: #3a86ff;
+}
+
+.section-headingj:hover::after {
+  width: 100%;
+}
+
+/* For course description heading */
+.course-descriptionj h2 {
+  position: relative;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.course-descriptionj h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3a86ff, #6c63ff, #ff6b6b);
+  transition: width 0.4s ease;
+}
+
+.course-descriptionj h2:hover::after {
+  width: 100%;
+}
+
+/* For learn section heading */
+.learn-sectionj h2 {
+  position: relative;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.learn-sectionj h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6c63ff, #ff6b6b, #3a86ff);
+  transition: width 0.4s ease;
+}
+
+.learn-sectionj h2:hover::after {
+  width: 100%;
+}

@@ -32,42 +32,50 @@ export const CareerTeamData = [
     }
 ]
 
+import { faChartLine, faCode, faBullhorn, faPaintBrush, faGlobe, faCloud } from '@fortawesome/free-solid-svg-icons';
+
 export const servicesData = [
     {
       title: "Digital Marketing & SEO",
       description: "Boost your online presence and drive traffic with our AI-enhanced marketing strategies.",
       link: "/service/digitalmarketing_service",
-      delay: "0"
+      delay: "0",
+      dataIcon: faChartLine
     },
     {
       title: "Custom Software Development",
       description: "Develop bespoke software solutions tailored to your business needs.",
       link: "/service/software_service",
-      delay: "100"
+      delay: "100",
+      dataIcon: faCode
     },
     {
       title: "Brand Strategy & Identity",
       description: "Build a strong brand identity that resonates with your target audience.",
       link: "/service/logo_service",
-      delay: "200"
+      delay: "200",
+      dataIcon: faBullhorn
     },
     {
       title: "UI/UX Design & Research",
       description: "Design user-centric interfaces that enhance user engagement and satisfaction.",
       link: "/service/uiux_service",
-      delay: "300"
+      delay: "300",
+      dataIcon: faPaintBrush
     },
     {
       title: "Web Development",
       description: "Deliver comprehensive web applications with our full-stack expertise.",
       link: "/service/web_service",
-      delay: "400"
+      delay: "400",
+      dataIcon: faGlobe
     },
     {
       title: "Cloud & DevOps",
       description: "Optimize your infrastructure with seamless cloud and DevOps solutions.",
       link: "/service/cloud_service",
-      delay: "500"
+      delay: "500",
+      dataIcon: faCloud
     }
   ];
 

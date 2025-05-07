@@ -125,7 +125,7 @@ export const contactInfoData = [
     {
         title: '📩 Send Your CV',
         description: 'Join our team at ',
-        link: '/careers',
+        link: '/career',
         linkText: 'Careers'
     },
     {

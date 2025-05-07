@@ -124,6 +124,7 @@
     transform: translateX(-20px);
     opacity: 0;
     animation: linkSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    -webkit-animation: linkSlideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 .quick-links ul li:nth-child(2) { animation-delay: 0.2s; }
@@ -328,6 +329,10 @@
     .footer-section h2::after {
         left: 50%;
         transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     }
 
     .social-icons {
@@ -345,19 +350,66 @@
 }
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 40px 0 20px;
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-section{
+        width: 100%;
+        text-align: left;
+    }
+    .footer-section .social-icons{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        justify-content: start;
     }
 
-    .container {
-        padding: 0 20px;
+    .footer-section .subscribe-box{
+        margin-top: 1.02rem;
     }
 
-    .footer-section h2 {
-        font-size: 20px;
+    .footer-section h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
     }
 
     .footer-bottom ul {
+        list-style-type: none;
+    }
+
+    .footer-bottom ul li Link{
+        text-decoration: none;
+    }
+
+    .footer-bottom ul li a:hover {
+        color: #64ffda;
+    }
+    
+    .footer-bottom ul li a:hover::after {
+        width: 100%;
+    }
+
+    .quick-links ul li a::before {
+        display: none;
+    }
+
+    .quick-links ul li:hover{
+        border-bottom: 1px solid #64ffda;
+    }
+
+    .footer-bottom ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         gap: 15px;
     }
 }
