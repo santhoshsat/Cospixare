@@ -69,15 +69,20 @@ const Navbar = () => {
           <li 
             className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
             style={{ '--i': 1 }}
-            onMouseEnter={() => setActiveDropdown('services')}
+            onMouseEnter={() => setActiveDropdown('service')}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button
+
+            {/* <button
               className="drop-btn"
-              onClick={() => toggleDropdown('services')}
-            >
-              <FontAwesomeIcon icon={faCogs} /> Services <FontAwesomeIcon icon={faChevronDown} />
-            </button>
+              onClick={() => toggleDropdown('service')} 
+              
+            >  */}
+             <a href="/service">
+              <FontAwesomeIcon icon={faCogs} />Services <FontAwesomeIcon icon={faChevronDown} />
+             
+              </a>
+            {/* </button> */}
             <div className="dropdown-content">
               <div className="mega-menu">
                 <div className="menu-column">
@@ -113,32 +118,34 @@ const Navbar = () => {
           <li 
             className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
             style={{ '--i': 1 }}
-            onMouseEnter={() => setActiveDropdown('services')}
+            onMouseEnter={() => setActiveDropdown('course')}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button
+            {/* <button
               className="drop-btn"
-              onClick={() => toggleDropdown('services')}
-            >
+              onClick={() => toggleDropdown('course')}
+            > */}
+            <a href="/course">
               <FontAwesomeIcon icon={faBookOpen} /> Courses <FontAwesomeIcon icon={faChevronDown} />
-            </button>
+            {/* </button> */}
+            </a>
             <div className="dropdown-content">
               <div className="mega-menu2">
                 <div className="menu-column">
                   <h3>Full Stack Development</h3>
-                  <a href="/service/digitalmarketing_service">
+                  <a href="/course/web-dev">
                     <FontAwesomeIcon icon={faCode} /> Web Development
                   </a>
-                  <a href="/service/software_service">
+                  <a href="/course/app">
                     <FontAwesomeIcon icon={faMobileAlt} /> App Development
                   </a>
                 </div>
                 <div className="menu-column">
                   <h3>AI & Data Science Programs</h3>
-                  <a href="/service/logo_service">
+                  <a href="/course/ai">
                     <FontAwesomeIcon icon={faRobot} /> Artifical Intelligence
                   </a>
-                  <a href="/service/uiux_service">
+                  <a href="/course/ml">
                     <FontAwesomeIcon icon={faBrain} /> Machine Learning
                   </a>
                 </div>

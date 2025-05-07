@@ -1,13 +1,10 @@
 import React from 'react'
 import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faMobileAlt, faBrain, faRobot } from '@fortawesome/free-solid-svg-icons'
 
+import './CourseList.css'
 import { CourseListData } from '../../../data/CourseData'
-
-const iconsData = [
-    faCode, faMobileAlt, faBrain, faRobot
-]
+import OverALLCourse from '../../../assets/coursePdf/Over All Course Brochure.pdf'
 
 const CourseList = () => {
     return(
@@ -15,6 +12,7 @@ const CourseList = () => {
              <main>
                   <section className="servicestwo" id="servicespage">
                     <h2 className="section-titletwo">Our Courses</h2>
+                    <a href={OverALLCourse} download='OverAllCourse' className="cta-btn animate-btn">Download Now</a>
                     <div className="service-containertwo">
                         {
                             CourseListData.map((data, index) => (
@@ -25,7 +23,7 @@ const CourseList = () => {
                                     key={index}
                                 >
                                     <div className="service-icon">
-                                        <FontAwesomeIcon icon={iconsData[index]} />
+                                        <FontAwesomeIcon icon={data.icon} beat size='sm' style={{ color: '#ffffff', }} />
                                     </div>
                                     <h3>{data.title}</h3>
                                     <p style={{ textAlign: 'left' }}>{data.description}</p>

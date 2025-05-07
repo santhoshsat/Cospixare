@@ -15,7 +15,7 @@ const Contact = () => {
             Whether you have a project in mind or just want to say hello, our team at<br/>
             <span>Cospixare Technologies</span> is here to help. Let's create the future together.
           </p>
-          <a href="#contact-form" className="contact-button">Get in Touch</a>
+          <a href="#contact-section" className="contact-button">Get in Touch</a>
         </div>
       </section>
 

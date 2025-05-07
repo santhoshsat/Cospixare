@@ -97,7 +97,7 @@ const ServiceDetailPage = ({ title, subtitle, heroImageAlt, heroAnchor, services
                 We offer a range of high-quality services, from web development to UI/UX design, 
                 ensuring your business stays ahead in the digital world.
               </p>
-              <a href="/services" className="btn-primaryeach">View All Services</a>
+              <a href="/service" className="btn-primaryeach">View All Services</a>
             </aside>
           </section>
         </div>

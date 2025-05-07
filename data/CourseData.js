@@ -1,25 +1,30 @@
 // map fn -> works only on array
+import { faCode, faMobileAlt, faBrain, faRobot } from '@fortawesome/free-solid-svg-icons'
 
 export const CourseListData = [
     {
         title: 'Full stack web development',
         description: 'Learn to build responsive, modern websites using HTML, CSS, JavaScript, and frameworks like React',
-        destination: '/course/web-dev'
+        destination: '/course/web-dev',
+        icon: faCode
     },
     {
         title: 'Full stack app development',
         description: 'Create mobile applications for Android and iOS using tools like Flutter or React Native',
-        destination: '/course/app'
+        destination: '/course/app',
+        icon: faMobileAlt
     },
     {
         title: 'Artifical Intelligence',
         description: 'Understand AI concepts including neural networks, NLP, and intelligent systems.',
-        destination: '/course/ai'
+        destination: '/course/ai',
+        icon: faBrain
     },
     {
         title: 'Machine Learning',
         description: 'Learn how to train models, handle data, and apply algorithms like regression and clustering.',
-        destination: '/course/ml'
+        destination: '/course/ml',
+        icon: faRobot
     }
 ]
 

@@ -2,9 +2,9 @@ import React from 'react';
 import './Services.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { servicesData } from '../../../data/careerData';
-import { FaChartLine, FaCode, FaBullhorn, FaPaintBrush, FaGlobe, FaCloud } from 'react-icons/fa';
 
 AOS.init({
   duration: 800,
@@ -12,16 +12,9 @@ AOS.init({
   once: true
 });
 
-const serviceIcons = [
-  <FaChartLine />,
-  <FaCode />,
-  <FaBullhorn />,
-  <FaPaintBrush />,
-  <FaGlobe />,
-  <FaCloud />
-]
-
 const ServicesPage = () => {
+
+    console.log(servicesData)
 
   return (
     <main>
@@ -50,7 +43,9 @@ const ServicesPage = () => {
               data-aos="fade-up"
               data-aos-delay={service.delay}
             >
-              <div className="service-icon">{serviceIcons[index]}</div>
+              <div className="service-icon">
+                <FontAwesomeIcon icon={service.dataIcon} beat size='sm' style={{ color: '#ffffff', }} />
+              </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
               <a href={service.link} className="btn">Learn More →</a>

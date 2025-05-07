@@ -2,6 +2,9 @@ import React from 'react';
 import './Home.css';
 
 import { homeData, servicesData, whoweareData } from '../../../data/datas';
+import herowrapperImg from '/assets/images/hero-wrapper.svg'
+import team1Img from '/assets/images/team1.jpg'
+import team2Img from '/assets/images/team2.jpg'
 
 const Home = () => {
   return (
@@ -12,7 +15,7 @@ const Home = () => {
           <p>We help build and manage a team of world-class developers to bring your vision to life.</p>
           <a href="/contact" className="btn">Let's get started!</a>
         </div>
-        <img src="/assets/images/hero-wrapper.svg" alt="Team Illustration" className="hero-image" />
+        <img src={herowrapperImg} alt="Team Illustration" className="hero-image" />
       </section>
 
       <section className="who-we-are">
@@ -31,8 +34,8 @@ const Home = () => {
           </div>
         </div>
         <div className="who-we-are-images">
-          <img src="/assets/images/team1.jpg" alt="Teamwork" />
-          <img src="/assets/images/team2.jpg" alt="Collaboration" />
+          <img src={team1Img} alt="Teamwork" />
+          <img src={team2Img} alt="Collaboration" />
         </div>
       </section>
 

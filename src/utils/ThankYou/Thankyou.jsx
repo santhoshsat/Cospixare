@@ -63,7 +63,7 @@ const ThankYou = () => {
 
           <div className="action-buttons">
             <a href="/" className="home-button primary-btn">Return to Homepage</a>
-            <a href="/services" className="portfolio-button secondary-btn">View Our Services</a>
+            <a href="/service" className="portfolio-button secondary-btn">View Our Services</a>
           </div>
         </div>
       </section>
