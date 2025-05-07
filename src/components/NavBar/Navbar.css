@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 20px;
     background: linear-gradient(135deg, #2c3e50, #3498db);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     position: fixed;
@@ -18,7 +18,7 @@
 }
 
 .navbar.scrolled {
-    padding: 15px 5%;
+    padding: 10px 20px;
     background: rgba(44, 62, 80, 0.95);
     backdrop-filter: blur(10px);
 }

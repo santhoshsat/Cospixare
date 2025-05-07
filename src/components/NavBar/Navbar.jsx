@@ -20,6 +20,7 @@ import {
   faBookOpen
 } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import NewNavbar from '../../utils/SearchBar/NewNavBar'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -80,7 +81,6 @@ const Navbar = () => {
             >  */}
              <a href="/service">
               <FontAwesomeIcon icon={faCogs} />Services <FontAwesomeIcon icon={faChevronDown} />
-             
               </a>
             {/* </button> */}
             <div className="dropdown-content">
@@ -172,12 +172,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="search-box">
-          <input type="text" id="search-input" name="search" placeholder="Search..." />
-          <button>
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-        </div>
+        <NewNavbar />
 
         <div 
           className={`menu-toggle ${mobileMenuActive ? 'active' : ''}`} 
