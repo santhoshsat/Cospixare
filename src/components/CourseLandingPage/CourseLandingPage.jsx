@@ -36,7 +36,8 @@ const CourseLandingPage = ({ heading, overview, description, techs=[], ListAllUs
                 </div>
                 <div className="buttonsj">
                     <div className="btn1j">Apply Now</div>
-                    <div className="btn2j">Download Course Detail</div>
+                    <div className="btn2j"><a href='../../../assets/coursespdf/OverAll.pdf' download='OverAllCourse'>Download Course Detail</a></div>
+                    <div className="btn3"><a href='/Course'>Back to course</a></div>
                 </div>
             </div>
             <div className='image-elementj'>
@@ -75,8 +76,10 @@ const CourseLandingPage = ({ heading, overview, description, techs=[], ListAllUs
                     </li>
                     ))}
                 </ul>
+                
             </div>
         </div>
+       
     </>
   )
 }

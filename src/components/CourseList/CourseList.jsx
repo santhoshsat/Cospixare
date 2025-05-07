@@ -15,6 +15,8 @@ const CourseList = () => {
              <main>
                   <section className="servicestwo" id="servicespage">
                     <h2 className="section-titletwo">Our Courses</h2>
+                    <a href="../../../assets/coursespdf/OverAll.pdf" download='OverAllCourse' className="cta-btn animate-btn">Download Now</a>
+
                     <div className="service-containertwo">
                         {
                             CourseListData.map((data, index) => (

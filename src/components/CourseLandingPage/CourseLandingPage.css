@@ -60,6 +60,22 @@
     background-color: white;
     color: blue;
   }
+  .btn2j{
+    background-color: white;
+    color: blue;
+  }
+
+  .btn2j a:link{
+    text-decoration: none;
+  }
+  .btn3{
+    background-color: white;
+    color: blue;
+  }
+  .btn3 a:link{
+    text-decoration: none;
+  }
+  
   
   .w-containerj {
     display: flex;
