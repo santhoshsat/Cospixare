@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router'
 
-import { Terms, ThankYou, Privacy } from './utils'
+import { Terms, ThankYou, Privacy, ApplyForm } from './utils'
 import { Home, About, Contact, 
   Career, Service, DigitalMarketing,
   Cloud, Logo, Uiux, Software, Web, CourseList, WebDev, AIDev, AppDev, MLDev
@@ -17,6 +17,7 @@ const AppRoutes = () => {
     <Route path='/terms' element={<Terms />} />
     <Route path='/policy' element={<Privacy />} />
     <Route path='/thankyou' element={<ThankYou />} />
+    <Route path='/applyNow' element={<ApplyForm />} />
 
     {/* Services */}
     <Route path='/service' element={<Service />} />

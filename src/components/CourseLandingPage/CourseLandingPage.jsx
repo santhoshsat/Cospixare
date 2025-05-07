@@ -37,7 +37,9 @@ const CourseLandingPage = ({ heading, overview, description, techs=[], ListAllUs
                     }
                 </div>
                 <div className="buttonsj">
-                    <div className="btn1j">Apply Now</div>
+                    <div className="btn1j">
+                        <a href='/applyNow'>Apply Now</a>
+                    </div>
                     <div className="btn2j">
                         <a href={OverAllCoursePdf} download={'OverAllCourseData'}>Download Course Detail</a>
                     </div>
